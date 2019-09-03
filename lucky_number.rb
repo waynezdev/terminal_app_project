@@ -13,6 +13,8 @@ until number == "done"
     if number == "done"
         puts "Here is your final list of number(s) 
     #{user_input_list}"
+
+    
     else
 
     
@@ -21,22 +23,32 @@ until number == "done"
     puts "your number(s) are #{user_input_list}"
     
     end
-
+   
 end
 
-def random_pick(array)
+#ask user how many sets of numbers would they like.
+p "How many sets of numbers would you like?"
+
+set_number = gets.chomp.to_i
+
+
+
+     def random_pick(array)
     
-    array.sample 5 #You can pass an integer argument to sample to get N unique elements from the array:
+        4.times.map{array.sample 7} #You can pass an integer argument to sample to get N unique elements from the array:
       
-end
+    end
 
-def powerball_pick(array)
+    def powerball_pick(array)
     
-    array.sample 1 #You can pass an integer argument to sample to get N unique elements from the array:
+    array.sample 1 #pick one powerball
       
-end
+    end
+
+
+# p sets(set_number)
 
 p "your lucky number list is"
 p random_pick(user_input_list)
-p "your powerball is"
-p powerball_pick(user_input_list)
+ p "your powerball is"
+p set_number.times.map{powerball_pick(user_input_list)}
