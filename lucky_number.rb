@@ -59,37 +59,42 @@ end
 
 
 
-
+begin
 ### Feature 2 ###
 valid_set = true
 
-while valid_set == true
+    while valid_set == true
 
-    p "How many sets of numbers would you like?"
-    set_number = gets.chomp.to_i
+        p "How many sets of numbers would you like?"
+        set_number = gets.chomp.to_i
 
-    # to prevent users requesting too many sets of numbers
-    if set_number > 50 or set_number <= 0
-    p "too many sets or invalid"
+        # to prevent users requesting too many sets of numbers
+        if set_number > 50 or set_number <= 0
+        p "too many sets or invalid"
 
-   
-    else 
-    p "your lucky number list is"
-    lucky_num = set_number.times.map{random_pick(user_input_list)}
-
-    p lucky_num
-    # set_number.times.map{random_pick(user_input_list)}
     
-    p "your powerballs are"
-    powerball = set_number.times.map{powerball_pick(user_input_list)}
+        else 
+        p "your lucky number list is"
+        lucky_num = set_number.times.map{random_pick(user_input_list)}
 
-    p powerball
-    # set_number.times.map{powerball_pick(user_input_list)}
-    valid_set = false #or break
+        p lucky_num
+        # set_number.times.map{random_pick(user_input_list)}
+        
+        p "your powerballs are"
+        powerball = set_number.times.map{powerball_pick(user_input_list)}
+
+        p powerball
+        # set_number.times.map{powerball_pick(user_input_list)}
+
+        valid_set = false #or break
+        end
+
     end
+rescue
+
+    p "please restart program"
 
 end
-
 
 text_file = File.open "save_your_lotto_number.txt", "a"
 
@@ -117,3 +122,13 @@ def print_in_ascii(input)
     puts(a.asciify(input))
  end
 print_in_ascii("Good luck!")
+
+# begin
+
+# #code here
+
+# rescue
+
+# p "program ran with 0 error"
+
+# end
