@@ -1,7 +1,7 @@
 require 'colorize'
 require 'artii'
 
-puts "<<<hi #{ARGV[0]} #{ARGV[1]} WELCOME TO LUCKY NUMBER (Powerball)>>>"# make it look in a cool color
+puts "<<<hi #{ARGV[0]} #{ARGV[1]} WELCOME TO LUCKY NUMBER (Powerball)>>>"
 
 
 ARGV.clear
@@ -28,10 +28,10 @@ until number == "done"
     #{user_input_list}"
 
     elsif number.to_i > 35 || number.to_i <=0
+        
         p "your number is invalid"
         next
     
-
     else
 
     
