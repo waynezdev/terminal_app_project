@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 mkdir dist
-cp -r lucky_number.rb dist
+cp lucky_number.rb dist
