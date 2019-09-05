@@ -88,7 +88,9 @@ The program will automatically close after the number sets have been displayed a
 
 ## **Control Flow Diagram**
 
-![](C:\projects\Terminal app project\flow_ctrl_diagram.png)
+![flow_ctrl_diagram.png](flow_ctrl_diagram.png)
+
+
 
 ## **Implementation Plan**
 
@@ -239,9 +241,20 @@ https://github.com/waynezdev/terminal_app_project
 
 ## **Project management**
 
-refer to Trello screen shot
-
-
+The following screenshots shows certain time during the development of my program
 
 ![screen shots](./Trello_screen_shots/screenshot_01.PNG)
 
+![screen shots](./Trello_screen_shots/screenshot_02.PNG)
+
+![screen shots](./Trello_screen_shots/screenshot_03.PNG)
+
+![screen shots](./Trello_screen_shots/screenshot_04.PNG)
+
+![screen shots](./Trello_screen_shots/screenshot_05.PNG)
+
+![screen shots](./Trello_screen_shots/screenshot_06.PNG)
+
+![screen shots](./Trello_screen_shots/screenshot_06a.PNG)
+
+![screen shots](./Trello_screen_shots/screenshot_07.PNG)
