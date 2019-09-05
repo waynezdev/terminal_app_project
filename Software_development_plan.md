@@ -105,11 +105,15 @@ The program will automatically close after the number sets have been displayed a
 |                                           | Set keyword "done" to indicate completion of user input      | high      | 4/9/10   |
 |                                           | Write code to output 7 main entry numbers and 1 powerball number | high      | 4/9/19   |
 |                                           | Create an array of numbers from user inputs                  | high      | 4/9/19   |
-| Generating multiple sets of entry numbers | Create methods in source code to generate 7 main entry numbers from the array | high      |          |
-|                                           | Create methods in source code to generate 1 powerball numbers from the same array | high      |          |
-|                                           | Create a question to ask for quantity of number sets the user would like to generate |           |          |
+| Generating multiple sets of entry numbers | Create methods in source code to generate 7 main entry numbers from the array | high      | 4/9/19   |
+|                                           | Create methods in source code to generate 1 powerball numbers from the same array | high      | 4/9/19   |
+|                                           | Create a question to ask for quantity of number sets the user would like to generate | high      | 4/9/19   |
 |                                           | Prevent user requesting large quantity of number sets by add code to limit the quantity to 50 sets | very high | 4/9/19   |
-| Save your numbers                         |                                                              |           |          |
+|                                           | Print number sets on screen for viewing                      | normal    | 5/9/19   |
+| Save your numbers                         | Research how to write to a file                              | very high | 4/9/19   |
+|                                           | Update source code to save number set outputs into a text file | high      | 5/9/19   |
+|                                           | Prints "good luck!" on screen and ends the program           | normal    | 5/9/19   |
+|                                           |                                                              |           |          |
 
 ## **Help file** 
 
@@ -122,3 +126,5 @@ refer to testing.md
 ## **Developer Operations – GitHub**
 
 ## **Project management**
+
+Trello screen shot
