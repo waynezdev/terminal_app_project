@@ -243,5 +243,5 @@ refer to Trello screen shot
 
 
 
-![screen shots](./Trello_screen_shots/screenshot01.png)
+![screen shots](./Trello_screen_shots/screenshot_01.PNG)
 
