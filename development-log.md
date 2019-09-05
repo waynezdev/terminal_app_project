@@ -1,4 +1,4 @@
-##### Status update 3/9/2019
+##### Status update 3/9/2019 - large number sets request
 
 Initial testing of following features shows everything is working
 -Generating an array of numbers from user inputs is working fine.
@@ -23,6 +23,7 @@ while valid_set == true
 
    
 
+
     else 
     p "your lucky number list is"
     p set_number.times.map{random_pick(user_input_list)}
@@ -37,7 +38,7 @@ This "if statement" warns the user that their request is too large or below zero
 
 
 
-##### Status update 5/9/2019
+##### Status update 5/9/2019 - saving output to text file
 
 The last feature I built was for the program to save the outputs into a text file. The feature is working fine but if there was a lot of arrays the they would all be printed in one line. This is not a user friendly way to display the results. 
 
