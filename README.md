@@ -1,6 +1,8 @@
 # *Terminal app - Lucky Number Generator(Powerball) Ver 3.0**
 
+The GitHub repository can be seen in this location
 
+https://github.com/waynezdev/terminal_app_project
 
 ## **Statement of Purpose and Scope**
 
@@ -20,33 +22,17 @@ This application will provide some assistance in giving them some control over w
 
 ## **Features**
 
-The following list highlights the important features in the XXXX. These features important because together they increase the efficiency in choosing large set of numbers, saving user time and headache.
+The following list highlights the important features in the **Lucky Number Generator (Powerball)**. These features important because together they increase the efficiency in choosing large set of numbers, saving user time and headache.
 
-\1.       Quick pick Lucky Numbers – the program will let user input multiple Lucky Numbers and it will choose up to 7 random numbers, 1 Powerball number and display them. Each user input will be stored in an array. A method will be used to pick 7 unique numbers from that array and 1 number from the same array. This is to simulate the division 1 winning numbers. In Powerball there are two barrels of numbers. The first barrel has numbers from 1 to 35 inclusive. The has numbers from 1 to 20 inclusive. From the first barrel 7 main numbers are drawn. From the second barrel Powerball number is drawn.
-
-To win Division 1 you must match all 7 winning numbers plus the Powerball in a single game.
+1. Quick pick Lucky Numbers – the program will let user input multiple Lucky Numbers and it will choose up to 7 random numbers, 1 Powerball number and display them. Each user input will be stored in an array. A method will be used to pick 7 unique numbers from that array and 1 number from the same array. This is to simulate the division 1 winning numbers. In Powerball there are two barrels of numbers. The first barrel has numbers from 1 to 35 inclusive. The has numbers from 1 to 20 inclusive. From the first barrel 7 main numbers are drawn. From the second barrel Powerball number is drawn. To win Division 1 you must match all 7 winning numbers plus the Powerball in a single game.
 
  
 
-\2.       Create sets of numbers – the user may specify how many sets of the random pick from feature 1 and display all the sets. This feature is to save users from typing in numbers in the array every time they want to generate a set of numbers. Instead the program will generate the number of sets they want. The output will clearly display which is the 7 main number sets and which is the Powerball number set.
+2. Create sets of numbers – the user may specify how many sets of the random pick from feature 1 and display all the sets. This feature is to save users from typing in numbers in the array every time they want to generate a set of numbers. Instead the program will generate the number of sets they want. The output will clearly display which is the 7 main number sets and which is the Powerball number set.
 
  
 
-\3.       Save your numbers - The user can choose to save the outputs in a text file and share it with other people. This will give the user some convenience if they are not the person purchasing the tickets or they want others to see the final list of numbers.
-
- 
-
-\4.       Save your Lucky Number - some people have certain numbers they would like to be used all the time. This will allow them to save it and not having to input the numbers every time they use the program. After entering all their numbers, the user is given options to save the numbers. The numbers will be saved to a file on their computer. The next time they run the program their saved numbers will be displayed in the beginning and will ask them how many sets of lotto numbers they would like to generate.
-
-\5.       Pick from Lucky List – to choose certain number of from the lucky list and combine them with other random numbers e.g
-
-there are twenty numbers in the Lucky List and you woud like to use three of them in your new set of numbers. the application will choose random three numbers from your Lucky List and combine them with five other random numbers. This will give you  one set of numbers
-
- 
-
-\6.       Random pick from Lucky List – this is a quick way to generate a set of random numbers from a list of saved numbers (Lucky Number)
-
- 
+3. Save your numbers - The user can choose to save the outputs in a text file and share it with other people. This will give the user some convenience if they are not the person purchasing the tickets or they want others to see the final list of numbers.
 
  
 
@@ -221,23 +207,50 @@ The update codes worked as expected and gives an easy to read format of the outp
 
 ## **Help file** 
 
-refer to help_file.md
+*accurately* describe: steps to install the application; dependencies 
+required by the application; system/hardware requirements; features of 
+the application
 
+You can find all relevant files in my GitHub repository 
 
+https://github.com/waynezdev/terminal_app_project
+
+##### Dependencies
+
+ruby gem - colorize
+
+ruby gem - artii
+
+##### Installation
+
+To run the program, find the lucky_number.rb file on GitHub and save it in a folder and double click. This will open and run the program with all dependencies installed.
+
+##### how to use the features in Lucky Number Generator(Powerball)
+
+1. Starting the program users will give ask to enter their favourite numbers. There are no limit to how many numbers you can enter. Once all the numbers are entered, user will need to input "done" to move on to the next process
+2. The next process will be asking the user how many sets of lotto numbers and powerball number they would like to generate. Then sets of 7 lotto numbers and 1 powerball numbers will be generated form the list of favourite numbers.
+3. The number sets will be displayed on screen and also saved to a text file (save_your_lotto_number.txt) for easy access.
+
+##### System requirements
+
+Operating System - Windows 95 or later, Mac OS X 10 or later
+Processor Speed - Pentium 4, 3.2 GHz or Power PC G5, 2.0 GHz
+Memory - At least 512Mb
+Graphics Card - ATI Radeon 9800 w/ 256 MB video memory
+Hard Disk Space -  1GB
+Internet connection
 
 ## **Testing**
 
-refer to testing.md
+##### Test 1
 
-## **Developer Operations – GitHub**
+Input numbers larger than 35 or letters when asked to input favourite numbers. This should return a message on the screen saying "your number is invalid". This test is to simulate the 35 numbers in the Powerball lotto. 
 
-I will be using GitHub as my remote repository. 
+##### Test 2
 
-My GitHub user name is waynezdev
+Test number set generation - input a large number (more than 50) or letters when asked how many sets of number sets you would like to generate. This should return a message on the screen saying "too many sets or invalid". This test is to make sure the program does not run too many times and crash the computer.
 
-The GitHub repository can be seen in this location
 
-https://github.com/waynezdev/terminal_app_project
 
 ## **Project management**
 
@@ -258,3 +271,6 @@ The following screenshots shows certain time during the development of my progra
 ![screen shots](./Trello_screen_shots/screenshot_06a.PNG)
 
 ![screen shots](./Trello_screen_shots/screenshot_07.PNG)
+
+
+
