@@ -17,8 +17,10 @@ number = true
 
 
 until number == "done"
-   puts "please enter your number
-   Enter \"done\" when you enter all your numbers".colorize (:red)
+   puts "please enter your numbers (between 1 and 35)"
+   puts "When complete please enter" 
+   puts "done".colorize (:green) 
+
     number = gets.chomp # only enter number between 1 to 35
    
     if number == "done"
@@ -65,7 +67,8 @@ valid_set = true
 
     while valid_set == true
 
-        p "How many sets of numbers would you like?"
+        puts "How many sets of numbers and Powerball would you like to generate?".colorize (:blue)
+        puts "Maximum 50 sets".colorize (:red)
         set_number = gets.chomp.to_i
 
         # to prevent users requesting too many sets of numbers
@@ -123,12 +126,3 @@ def print_in_ascii(input)
  end
 print_in_ascii("Good luck!")
 
-# begin
-
-# #code here
-
-# rescue
-
-# p "program ran with 0 error"
-
-# end
