@@ -107,3 +107,4 @@ end
 text_file.close
 # File.open("save_your_lotto_number.txt", "a") do |line|
 #     line.puts "\n" + lucky_num.to_s + powerball.to_s
+p "Good luck!"
