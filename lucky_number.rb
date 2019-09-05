@@ -1,6 +1,10 @@
+require 'colorize'
+require 'artii'
+
 puts "<<<hi #{ARGV[0]} #{ARGV[1]} WELCOME TO LUCKY NUMBER (Powerball)>>>"# make it look in a cool color
 
-ARGV .clear
+
+ARGV.clear
 
 # Ensure that your features include the following language elements and concepts:
 # - use of variables and the concept of variable scope
@@ -14,7 +18,7 @@ number = true
 
 until number == "done"
    puts "please enter your number
-   Enter \"done\" when you enter all your numbers"
+   Enter \"done\" when you enter all your numbers".colorize (:red)
     number = gets.chomp # only enter number between 1 to 35
    
     if number == "done"
@@ -107,4 +111,9 @@ end
 text_file.close
 # File.open("save_your_lotto_number.txt", "a") do |line|
 #     line.puts "\n" + lucky_num.to_s + powerball.to_s
-p "Good luck!"
+
+def print_in_ascii(input)
+    a = Artii::Base.new
+    puts(a.asciify(input))
+ end
+print_in_ascii("Good luck!")
