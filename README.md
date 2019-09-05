@@ -231,6 +231,8 @@ To run the program, find the lucky_number.rb file on GitHub and save it in a fol
 2. The next process will be asking the user how many sets of lotto numbers and powerball number they would like to generate. Then sets of 7 lotto numbers and 1 powerball numbers will be generated form the list of favourite numbers.
 3. The number sets will be displayed on screen and also saved to a text file (save_your_lotto_number.txt) for easy access.
 
+![screen shots](save_your_lotto_number_screenshot.PNG))
+
 ##### System requirements
 
 Operating System - Windows 95 or later, Mac OS X 10 or later
