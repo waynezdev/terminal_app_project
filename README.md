@@ -1,22 +1,22 @@
-# *Terminal app - Lucky Number Generator(Powerball) Ver 3.0**
+# **Terminal app - Lucky Number Generator(Powerball) Ver 3.0**
 
-The GitHub repository can be seen in this location
+The GitHub repository is located at:
 
 https://github.com/waynezdev/terminal_app_project
 
+
+
+# Software Development Plan
+
+
+
 ## **Statement of Purpose and Scope**
 
-*- **identify** the problem it will solve and **explain** why you are developing it - **identify** the target audience  - **explain** how a member of the target audience will use it*
-
-Problem
-
-This application is aim to provide lottery syndicate groups a more efficient way to choose large set of numbers 
+The aim of this application is to provide lottery syndicate groups a more efficient way to choose large set of numbers 
 
 Lottery syndicate groups usually consist of between 5 to 10 people. They can be made up of friends or colleagues. The way they choose their numbers for each entry is usually by using auto picks at the time of purchasing a ticket. They have no control of the numbers they would like to choose. For groups that choose their numbers it can be hard to coordinate everyone’s numbers and it is time consuming. 
 
-This application will provide some assistance in giving them some control over which numbers they would like to be included in their entry tickets. It can accommodate everyone's favourite numbers so everyone will have a chance to have their number in the tickets. It will help them generate  large sets of numbers based on their choice of numbers for each entry
-
- 
+This application will provide some control over which numbers they would like to be included in their entry tickets. It can accommodate everyone's favourite numbers so everyone will have a chance to have their number in the tickets. It will help them generate  large sets of numbers based on their choice of numbers for each entry.
 
  
 
@@ -32,7 +32,7 @@ The following list highlights the important features in the **Lucky Number Gener
 
  
 
-3. Save your numbers - The user can choose to save the outputs in a text file and share it with other people. This will give the user some convenience if they are not the person purchasing the tickets or they want others to see the final list of numbers.
+3. Save your numbers - the outputs will be in a text file and share it with other people. This will give the user some convenience if they are not the person purchasing the tickets or they want others to see the final list of numbers.
 
  
 
@@ -42,27 +42,25 @@ The following list highlights the important features in the **Lucky Number Gener
 
 This program is mainly based on instructions/questions and user input. The main goal is to generate a list of lotto numbers for the user.
 
-\1.       Entering favourite numbers
+1. **Entering favourite numbers**
 
 The first thing the program ask the user is to enter in their favourite numbers. Many users have numbers which they believe to be lucky or helps them increase their chances in winning the jackpot. The user will enter each number into the program and each number will be stored in an array. Once they have entered all their numbers they can input “done” to let the program know they have finish the input.
 
-\2.       Generating multiple sets of Powerball entry numbers
 
- 
 
-After entering all the numbers the program will display their list of favourite numbers in an array.
+2. **Generating multiple sets of Powerball entry numbers**
 
-puts "Here is your final list of number(s) 
+ After entering all the numbers the program will display their list of favourite numbers in an array.  Then the program will also ask the user how many sets of entry numbers they would like to generate. Once the user enter a number the program will output different list of entry numbers and Powerball numbers in arrays.
 
- 
 
-Then the program will also ask the user how many sets of entry numbers they would like to generate. Once the user enter a number the program will output different list of entry numbers and Powerball numbers in arrays.
 
-\3.       Save the numbers 
+3. **Save the numbers** 
 
 The users will be given an option to save the entry numbers into a text file. They will be given the option to choose save or exit without saving. If they choose to save the numbers the actual file will open up with their number in it for their viewing.
 
-\4.       Exiting 
+
+
+4. **Exiting** 
 
 The program will automatically close after the number sets have been displayed and saved. 
 
@@ -96,13 +94,14 @@ The program will automatically close after the number sets have been displayed a
 | Generating multiple sets of entry numbers | Create methods in source code to generate 7 main entry numbers from the array | high      | 4/9/19   |
 |                                           | Create methods in source code to generate 1 powerball numbers from the same array | high      | 4/9/19   |
 |                                           | Create a question to ask for quantity of number sets the user would like to generate | high      | 4/9/19   |
-|                                           | Prevent user requesting large quantity of number sets by add code to limit the quantity to 50 sets | very high | 4/9/19   |
+|                                           | Prevent user requesting large quantity of number sets by add codes to limit the quantity to 50 sets | very high | 4/9/19   |
 |                                           | Print number sets on screen for viewing                      | normal    | 5/9/19   |
 |                                           | Test number sets are generated properly and each array is unique | normal    | 5/9/19   |
 | Save your numbers                         | Research how to write to a file                              | very high | 4/9/19   |
 |                                           | Update source code to save number set outputs into a text file | high      | 5/9/19   |
 |                                           | Prints "good luck!" on screen and ends the program           | normal    | 5/9/19   |
 |                                           | Test saving output into the right file and format            | high      | 5/9/19   |
+|                                           | add Gems to the codes                                        | normal    | 6/9/19   |
 
 
 
@@ -121,23 +120,18 @@ If user specify a large quantity of sets it slowed down the computer and it migh
 
 To prevent user accidently request a large quantity of number sets. I have update the code with an "if statement" to stop the process of producing the final output.
 
+```
 valid_set = true
 
 while valid_set == true
 
-```
 p "How many sets of numbers would you like?"
 set_number = gets.chomp.to_i
 
 if set_number > 50 or set_number <= 0
 p "too many sets or invalid"
-```
-
-   
 
 
-
-```
 else 
 p "your lucky number list is"
 p set_number.times.map{random_pick(user_input_list)}
@@ -146,8 +140,6 @@ p set_number.times.map{powerball_pick(user_input_list)}
 valid_set = false #or break
 end
 ```
-
-end
 
 This "if statement" warns the user that their request is too large or below zero. Then it will keep asking for the number of sets they need until it is within range and produce the lotto numbers.
 
@@ -206,10 +198,6 @@ The update codes worked as expected and gives an easy to read format of the outp
 
 
 ## **Help file** 
-
-*accurately* describe: steps to install the application; dependencies 
-required by the application; system/hardware requirements; features of 
-the application
 
 You can find all relevant files in my GitHub repository 
 
@@ -276,3 +264,6 @@ The following screenshots shows certain time during the development of my progra
 
 
 
+End of document
+
+Thanks for reading
