@@ -236,9 +236,13 @@ Internet connection
 
 Input numbers larger than 35 or letters when asked to input favourite numbers. This should return a message on the screen saying "your number is invalid". This test is to simulate the 35 numbers in the Powerball lotto. 
 
+Test result  - pass
+
 ##### Test 2
 
 Test number set generation - input a large number (more than 50) or letters when asked how many sets of number sets you would like to generate. This should return a message on the screen saying "too many sets or invalid". This test is to make sure the program does not run too many times and crash the computer.
+
+Test result - pass
 
 
 
