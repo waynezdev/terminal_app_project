@@ -73,7 +73,7 @@ valid_set = true
 
         # to prevent users requesting too many sets of numbers
         if set_number > 50 or set_number <= 0
-        p "too many sets or invalid"
+        puts "too many sets or invalid".colorize (:red)
 
     
         else 
